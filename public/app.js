@@ -320,7 +320,7 @@ class GLMVoiceChat {
             this.analyser.fftSize = 2048;
             this.audioInput.connect(this.analyser);
 
-            this.ws = new WebSocket('ws://localhost:3102');
+            this.ws = new WebSocket('wss://glm-realtime.gujiakai.top');
             
             this.ws.onopen = () => {
                 this.debug('WebSocket连接已建立');
