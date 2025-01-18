@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GLM-Realtime API演示</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GLM-Realtime API演示</h1>
+        
+        <div class="input-group">
+            <label for="apiKeyInput">GLM API Key:</label>
+            <input type="text" id="apiKeyInput" placeholder="请输入您的API Key">
+        </div>
+
+        <div class="button-group">
+            <button id="startButton">开始对话</button>
+            <button id="stopButton" disabled>结束对话</button>
+        </div>
+
+        <div id="status">状态: 等待开始...</div>
+
+        <div class="audio-visualizer" id="visualizer"></div>
+
+        <div id="transcription"></div>
+
+        <div class="debug-section">
+            <h3>调试信息</h3>
+            <div id="debugInfo"></div>
+        </div>
+    </div>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script type="module" src="js/AudioStorage.js"></script>
+    <script type="module" src="js/UIManager.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

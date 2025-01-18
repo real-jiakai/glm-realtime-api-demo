@@ -1,0 +1,76 @@
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #transcription {
+        min-height: 150px;
+        max-height: 300px;
+        font-size: 14px;
+    }
+
+    .message-container {
+        padding: 8px;
+    }
+
+    #apiKeyInput {
+        font-size: 16px;
+    }
+
+    .debug-section {
+        display: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (hover: none) {
+    button, .audio-button {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .audio-button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+} 
