@@ -1,14 +1,19 @@
 {
-  "name": "test",
+  "name": "glm-realtime-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "GLM-Realtime API Demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "glm",
+    "real-time",
+    "api"
+  ],
+  "author": "real-jiakai",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
