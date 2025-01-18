@@ -324,6 +324,7 @@ class GLMVoiceChat {
             
             this.ws.onopen = () => {
                 this.debug('WebSocket连接已建立');
+                this.updateStatus('WebSocket连接已建立');
                 this.ws.send(JSON.stringify({
                     type: 'auth',
                     apiKey: apiKey
@@ -486,6 +487,7 @@ class GLMVoiceChat {
             switch (jsonData.type) {
                 case 'connected':
                     this.debug('认证成功，发送会话配置');
+                    this.updateStatus('已连接到服务器'); // 添加这行
                     this.sendSessionConfig();
                     break;
                 case 'session.created':
