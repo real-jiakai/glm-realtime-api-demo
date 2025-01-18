@@ -1,3 +1,5 @@
+[English](./README.md) · [中文](./README.zh-CN.md)
+
 ## GLM-Realtime API演示
 
 本项目用于演示GLM-Realtime API效果。

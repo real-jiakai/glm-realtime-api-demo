@@ -1,3 +1,5 @@
+[English](./README.md) · [中文](./README.zh-CN.md)
+
 ## GLM-Realtime API Demonstration
 
 This project is designed to showcase the capabilities of the GLM-Realtime API.
